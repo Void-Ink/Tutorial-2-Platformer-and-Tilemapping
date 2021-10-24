@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraScript
+    - Enemy_Movement
     - PlayerController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -31,12 +32,15 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -45,10 +49,9 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/Tutorial 2.unity:
+    Assets/Scenes/Challenge 2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -67,28 +70,40 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 62
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 626}
     - Class: 114
-      Script: {instanceID: 2668}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2902}
+      Script: {instanceID: 2670}
     - Class: 114
-      Script: {instanceID: 3186}
+      Script: {instanceID: 2904}
     - Class: 114
-      Script: {instanceID: 5436}
+      Script: {instanceID: 3188}
     - Class: 114
-      Script: {instanceID: 5824}
+      Script: {instanceID: 5826}
     - Class: 114
-      Script: {instanceID: 6170}
+      Script: {instanceID: 6172}
     - Class: 114
-      Script: {instanceID: 6728}
+      Script: {instanceID: 6730}
     - Class: 114
-      Script: {instanceID: 8236}
+      Script: {instanceID: 8238}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -224,6 +239,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy_Movement
   - hash:
       serializedVersion: 2
       Hash: cfdd0010efd7b54c2b7512656dbc9119
@@ -970,7 +991,7 @@ ScriptsOnlyBuild:
     className: SpriteLibraryAsset
   - hash:
       serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
+      Hash: ae753259239b05105626df10aaa78727
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -1054,5 +1075,6 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
-  - Assets/Scenes/Tutorial 2.unity
-  playerPath: C:/Users/Coda/Documents/Unity Folder/Tutorial 2/Builds/Tutorial 2.exe
+  - Assets/Scenes/Challenge 2.unity
+  playerPath: C:/Users/Coda/Documents/Unity Folder/Tutorial 2/Challenge Build/Tutorial
+    2.exe

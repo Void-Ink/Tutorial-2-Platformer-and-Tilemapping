@@ -294,6 +294,7 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraScript.cs"
+"Assets/Scripts/Enemy_Movement.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:8.0
 
